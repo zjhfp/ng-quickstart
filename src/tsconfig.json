@@ -4,10 +4,15 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
+    // 给源码里的装饰器声明加上设计类型元数据
     "emitDecoratorMetadata": true,
+    // 实验性启用es7的装饰器支持
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
-  }
+  },
+  "exclude": [
+      "node_modules"
+  ]
 }
